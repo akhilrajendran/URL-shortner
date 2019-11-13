@@ -7,8 +7,8 @@ Benefits
 3.User has an account in which he/she can shorten it.
 4.User can generate any number of URL.
 5.User can view all his generated URL.
-Requirements
 
+Requirements
 1. Make sure your server meets the requirements:
     a) Apache
     b) PHP

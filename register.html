@@ -1,0 +1,39 @@
+<html><body>
+    <head>
+    <title> URL Shortner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="extern.css"> </link>
+    <script type="text/javascript">
+        function check_pass() {
+    if (document.getElementById('password').value ==
+            document.getElementById('confirm_password').value) {
+        document.getElementById('button').disabled = false;
+    } else {
+
+        document.getElementById('button').disabled = true;
+        alert("passwords doesnot match");
+    }
+}
+      
+  </script>
+    </head>
+    <body>
+        
+<div class="heading">
+Register
+</div>
+<span id="message"></span>
+<div class="login-page">
+  <div class="form"  method="post" >
+    <form class="login-form" method="post" action="registration.php">
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="password" id="password" name="password"/>
+      <input type="password" placeholder="Confirm password" id="confirm_password" onchange='check_pass();'/>
+      <button id="button">Register</button>
+      
+    </form>
+    
+  </div>
+</div>
+      
+</body></html>
